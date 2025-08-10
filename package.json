@@ -4,7 +4,9 @@
     "description": "landing page",
     "source": "index.html",
     "scripts": {
-        "sass:watch": "sass --style=expanded --watch styles:dist"
+        "sass:watch": "sass --style=expanded --watch styles:dist",
+        "parcel:watch": "parcel serve --dist-dir public",
+        "parcel:build": "parcel build --dist-dir build --public-url ./"
     },
     "repository": {
         "type": "git",
@@ -17,6 +19,7 @@
     },
     "homepage": "https://github.com/Yaroslav-Lazovski/live_streaming#readme",
     "devDependencies": {
+        "@parcel/transformer-raw": "^2.15.4",
         "parcel": "^2.15.4",
         "sass": "^1.90.0"
     }
