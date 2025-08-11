@@ -1,0 +1,47 @@
+@use "variables" as v;
+@use "mixins" as m;
+@use "placeholders";
+@use "sass:color";
+
+.hero {
+    position: relative;
+    max-width: 1260px;
+    height: 830px;
+    margin: 0 auto;
+    padding: 140px 0 0 0;
+    background: url("../assets/img/cloud_alpha.png") center/contain no-repeat;
+
+    &__content {
+        position: relative;
+        width: 900px;
+        margin: 0 auto;
+
+        .hero__title {
+            @include m.font(110px, 700, v.$color_black);
+            line-height: 1;
+        }
+
+        .hero__action-btn {
+            width: 380px;
+            height: 80px;
+            background: v.$color_black;
+            border-radius: 45px;
+            border: none;
+            cursor: pointer;
+            @include m.font(28px, 500, v.$color_white);
+            @include m.position(absolute, 1, -1, bottom, right, 15px, 0);
+
+            &:hover {
+                background-color: color.adjust(v.$color_black, $alpha: -0.35);
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &:focus-visible {
+                outline: 2px solid v.$color_white;
+            }
+        }
+    }
+}
