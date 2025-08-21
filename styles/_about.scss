@@ -38,6 +38,9 @@
             }
 
             @media (max-width: v.$media_md) {
+                background: url("../assets/img/desktop_alpha.webp") 100% 100% /
+                    450px no-repeat;
+
                 &-title {
                     @include m.font(35px, 400, v.$color-white);
                 }
@@ -46,18 +49,15 @@
                     max-width: 500px;
                     @include m.font(16px, 300, v.$color-white);
                 }
-
-                background: url("../assets/img/desktop_alpha.webp") 100% 100% /
-                    450px no-repeat;
             }
 
             @media (max-width: v.$media_sm) {
+                background: url("../assets/img/desktop_alpha.webp") 150px 100% /
+                    400px no-repeat;
+
                 &-description {
                     max-width: 320px;
                 }
-
-                background: url("../assets/img/desktop_alpha.webp") 150px 100% /
-                    400px no-repeat;
             }
         }
 
@@ -200,6 +200,8 @@
 
             @media (max-width: v.$media_md) {
                 height: 730px;
+                background: url("../assets/img/cactus_alpha.webp") 99% 100% /
+                    320px no-repeat;
 
                 &-title {
                     margin: 80px 0 0 0;
@@ -210,19 +212,16 @@
                     padding: 0 15px 0 0;
                     @include m.font(16px, 300, v.$color-white);
                 }
-
-                background: url("../assets/img/cactus_alpha.webp") 99% 100% /
-                    320px no-repeat;
             }
 
             @media (max-width: v.$media_sm) {
                 height: 500px;
+                background: url("../assets/img/cactus_alpha.webp") 99% 100% /
+                    220px no-repeat;
 
                 &-title {
                     margin: 0;
                 }
-                background: url("../assets/img/cactus_alpha.webp") 99% 100% /
-                    220px no-repeat;
             }
         }
     }
