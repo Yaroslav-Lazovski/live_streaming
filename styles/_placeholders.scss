@@ -16,6 +16,7 @@
 
 %hover-black-icon {
     &:hover {
+        cursor: pointer;
         stroke: v.$color_black;
     }
 }
